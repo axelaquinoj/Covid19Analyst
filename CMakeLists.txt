@@ -3,4 +3,4 @@ project(Covid19Analyst)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Covid19Analyst main.cpp)
+add_executable(Covid19Analyst main.cpp Covid.cpp)
