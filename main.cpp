@@ -154,11 +154,12 @@ int main() {
         stop = high_resolution_clock::now();
         auto durationQuick = duration_cast<microseconds>(stop - start);
 
-        cout<< "\nExecution time for merge sort: " << durationMerge.count() << " microseconds" << endl;
-        cout<< "Execution time for quick sort: " << durationQuick.count() << " microseconds\n\n" << endl<<endl;
+
 
         //Prints the data of whatever user selects --------------------
         printData(dataToSort, numDataPoints, selectionS);
+        cout<< "\nExecution time for merge sort: " << durationMerge.count() << " microseconds" << endl;
+        cout<< "Execution time for quick sort: " << durationQuick.count() << " microseconds\n\n" << endl<<endl;
         // Reset structures --------------------
         dataToSort.clear();
         countriesToAnalyze.clear();
